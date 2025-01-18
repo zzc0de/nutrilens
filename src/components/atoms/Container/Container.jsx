@@ -1,7 +1,9 @@
 const Container = ({ className, children }) => {
   return (
     <>
-      <div className={`w-full font-Inter ${className}`}>{children}</div>
+      <div className={`w-full max-w-screen-lg font-Inter mx-auto ${className}`}>
+        {children}
+      </div>
     </>
   );
 };
