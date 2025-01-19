@@ -6,12 +6,12 @@ const BenefitsList = ({ benefits }) => {
     <>
       <Container
         className={
-          "flex flex-row bg-white p-6 rounded-md justify-center items-center gap-x-4"
+          "grid grid-cols-1 md:grid-cols-3 max-w-fit gap-4 bg-white justify-items-center p-4 rounded-md"
         }
       >
         {benefits.map((benefit, index) => (
           <Card
-            className={"bg-primary-blue text-white"}
+            className={"text-white bg-primary-blue max-w-xs h-40"}
             title={benefit.title}
             key={index}
             desc={benefit.desc}

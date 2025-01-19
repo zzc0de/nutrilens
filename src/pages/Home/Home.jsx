@@ -1,4 +1,3 @@
-import Button from "../../components/atoms/Button/Button";
 import Container from "../../components/atoms/Container/Container";
 import BenefitsList from "../../components/molecules/BenefitsList";
 import HeroSection from "../../components/molecules/HeroSection";
@@ -19,15 +18,15 @@ const Home = () => {
           </h1>
         </div>
         <div className="flex w-full">
-          <div className="w-1/2 flex flex-col justify-center items-start gap-y-3">
-            <h1 className="font-bold text-4xl">Tingkatkan Pola Makan Anda</h1>
+          <div className="flex flex-col items-start justify-center w-1/2 gap-y-3">
+            <h1 className="text-4xl font-bold">Tingkatkan Pola Makan Anda</h1>
             <p>
               Lihat mana dari 84 vitamin dan mineral penting yang Anda dapatkan
               paling banyak dan paling sedikit, yang membantu Anda mengonsumsi
               makanan yang lebih seimbang.
             </p>
           </div>
-          <div className="w-1/2 flex justify-center items-center">
+          <div className="flex items-center justify-center w-1/2">
             <img
               src="/src/assets/diet-animate.svg"
               alt="diet"
@@ -36,8 +35,8 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <div className="w-full bg-primary-blue p-10 gap-y-6 flex flex-col">
-        <h1 className="text-center font-bold text-white text-4xl font-Inter">
+      <div className="flex flex-col w-full p-10 bg-primary-blue gap-y-6">
+        <h1 className="text-4xl font-bold text-center text-white font-Inter">
           Manfaat Nutrilens
         </h1>
         <BenefitsList
